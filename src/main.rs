@@ -7,10 +7,10 @@ fn main() -> io::Result<()>{
 
     let chars = split(quest);
     let tokens = parse(chars);
-    println!("{:?}", tokens);
+//    println!("{:?}", tokens);
 
     let rpn = to_rpn(tokens);
-    println!("RPN: {:?}", rpn);
+//    println!("RPN: {:?}", rpn);
 
     let result = eval_rpn(rpn);
     println!("Result: {}", result);
